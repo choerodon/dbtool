@@ -1,0 +1,7 @@
+FROM alpine:latest
+
+ENV WORK_PATH /var/choerodon
+RUN mkdir -p $WORK_PATH
+
+COPY choerodon-tool-liquibase.jar $WORK_PATH
+COPY choerodon-tool-config.jar $WORK_PATH
